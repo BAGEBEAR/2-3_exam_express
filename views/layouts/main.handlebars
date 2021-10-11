@@ -1,0 +1,40 @@
+<!-- ./views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+  
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="home btn btn-primary">回到首頁</a>
+      <div class="buttons">
+        <a href="/about" id="btn-about" class="btn btn-primary">About</a>
+        <a href="/portfolio" id="btn-portfolio" class="btn btn-primary">Portfolio</a>
+        <a href="/contact" id="btn-contact" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- partial templates will replace the part of "body" here -->
+  <div class="container">
+    {{{ body }}}
+  </div>
+  
+
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/jquery-3.3.1.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>
